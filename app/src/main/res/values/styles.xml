@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">#ffffff</item>
+        <item name="colorControlActivated">#000000</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:colorButtonNormal">#212121</item>
+        <item name="android:textAppearanceButton">@style/hello</item>
+        <item name="spinnerStyle">@style/Widget.AppCompat.Spinner</item>
+    </style>
+
+    <style name="hello">
+        <item name="android:textSize">35px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily"></item>
+    </style>
+
+    <style name="dialogtheme3" parent="@android:style/Theme.Translucent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#1A000000</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorButtonNormal">@color/pastel_orange</item>
+        <item name="android:textAppearanceButton">@style/hello</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="dialogtheme" parent="@style/Theme.AppCompat.Dialog.MinWidth">
+        <item name="android:background">#424242</item>
+        <item name="android:colorControlHighlight">#000000</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorButtonNormal">@color/pastel_orange</item>
+        <item name="android:textAppearanceButton">@style/hello</item>
+    </style>
+
+    <style name="dialogtheme1" parent="@style/Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorButtonNormal">@color/pastel_orange</item>
+        <item name="android:textAppearanceButton">@style/hello</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="dialogtheme2" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:background">#424242</item>
+        <item name="colorControlHighlight">#000000</item>
+        <item name="android:textColor">#000000</item>
+        <item name="colorAccent">#000000</item>
+        <item name="colorButtonNormal">#212121</item>
+    </style>
+
+    <color name="colorActivated">#F9A825</color>
+    <color name="primary">#303030</color>
+    <color name="primaryDark">#ffffff</color>
+    <color name="textPrimary">#000</color>
+    <color name="accent">#FFCCD4</color>
+    <color name="colorHighlight">#ffffff</color>
+    <color name="dadsfs">#5c3bb5</color>
+    <!--<item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/background</item>\
+        <item name="android:dialogPreferenceStyle">@color/dialogTheme</item>
+        <item name="android:textColor">@color/textAppearance</item>
+        <item name="android:keyBackground">@color/pastel_orange</item>-->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">#000000</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="IntroTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+</resources>
