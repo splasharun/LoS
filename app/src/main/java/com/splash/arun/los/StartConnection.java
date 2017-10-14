@@ -1,15 +1,19 @@
 package com.splash.arun.los;
 
+import android.Manifest;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.AnimationDrawable;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -45,6 +49,7 @@ public class StartConnection extends AppCompatActivity
     SwitchCompat switcher;
     ImageView los;
     AnimationDrawable mAnimationDrawable;
+    int MY_PERMISSION;
     //LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
     //LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
@@ -194,7 +199,18 @@ public class StartConnection extends AppCompatActivity
         else
             vibrateSwitch.setChecked(false);
 
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+            requestPermission();
+
+        }
     }
+
+    void requestPermission(){
+
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION},MY_PERMISSION);
+    }
+
 
     /*public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
 
